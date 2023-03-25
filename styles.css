@@ -10,6 +10,76 @@ body {
 
   background: #000;
   overflow: hidden;
+  font-family: "Noto Serif", serif;
+
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+main {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 77vh;
+}
+
+aside {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 30px;
+
+  position: absolute;
+  left: 60px;
+  bottom: -30px;
+}
+
+aside div {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+header ul li {
+  list-style: none;
+  font-size: 22px;
+  font-family: "Rubik", serif;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+h1,
+h2 {
+  font-size: 70px;
+}
+
+h2 {
+  margin-left: 75%;
+  line-height: 75px;
+}
+
+p {
+  margin-top: 200px;
+  max-width: 700px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: 18px;
 }
 
 .background {
@@ -20,4 +90,56 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: -1;
+}
+
+article div {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1110px) {
+  h1,
+  h2 {
+    font-size: 60px;
+  }
+
+  h2 {
+    margin-left: 40vw;
+  }
+}
+
+@media (max-width: 660px) {
+  header ul li {
+    font-size: 16px;
+  }
+
+  header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+
+  header div {
+    display: none;
+  }
+}
+
+@media (max-width: 530px) {
+  h1,
+  h2 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 420px) {
+  h1,
+  h2 {
+    font-size: 35px;
+  }
+
+  aside {
+    flex-direction: row;
+    bottom: -70px;
+    left: 30px;
+  }
 }
